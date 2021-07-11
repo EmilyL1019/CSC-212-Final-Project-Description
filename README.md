@@ -39,3 +39,5 @@ Stomach Pain: Adds 1 to the priority
 
 Blood Pressure:                                                                                                                                                  
 Systolic pressure is the first number in the blood pressure reading and the diastolic pressure is the second.
+
+![Knight Moves](chess.png)
