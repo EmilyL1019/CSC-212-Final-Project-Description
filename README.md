@@ -51,18 +51,18 @@ Systolic pressure is the first number in the blood pressure reading and the dias
 Heart Rate:                                                                                                                                        
 Uses another function to calculate this for organizational purposes - heartRatesRange(int heartRate, int fstLow, int lstLow, int normLow, int normHigh, int fstHigh, int secHigh, int currentPriority)
 ![Heart Rate Chart](Unknown.jpg)
-* Child Under 1:                                                                                                                                                  
-** Less than or equal to 30 beats or greater than 150: Adds 5 to priority
-** Less than or equal to 150 beats and more than 130 beats: Adds 4 to priority
-** Less than or equal to 50 beats and more than 30 beats: Adds 3 to priority
-** Less than or equal to 70 beats and more than 50 beats: Adds 2 to priority
-** Less than or equal to 130 beats and more than 110 beats: Adds 1 to priority
-** Less than or equal to 110 beats and more than 70 beats: No change
-
-* Child Under 1:                                                                                                                                                  
-** Less than or equal to 30 beats or greater than 150: Adds 5 to priority
-** Less than or equal to 150 beats and more than 130 beats: Adds 4 to priority
-** Less than or equal to 50 beats and more than 30 beats: Adds 3 to priority
-** Less than or equal to 70 beats and more than 50 beats: Adds 2 to priority
-** Less than or equal to 130 beats and more than 110 beats: Adds 1 to priority
-** Less than or equal to 110 beats and more than 70 beats: No change
+* Child 
+  * 3 Years Old and Under:                                                                                                                                                  
+    * Less than or equal to 30 beats or greater than 150 (0-30, 150 up, including 30): Adds 5 to priority
+    * Less than or equal to 150 beats and more than 130 beats (130-150, including 150): Adds 4 to priority
+    * Less than or equal to 50 beats and more than 30 beats (30-50, including 50): Adds 3 to priority
+    * Less than or equal to 70 beats and more than 50 beats (50-70, including 70): Adds 2 to priority
+    * Less than or equal to 130 beats and more than 110 beats (110-130, including 130): Adds 1 to priority
+    * Less than or equal to 110 beats and more than 70 beats (70-110, including 110): No change
+  * 6 to 3 Years Old:                                                                                                                                                  
+    * Less than or equal to 25 beats or greater than 150 (0-25, 150 up, including 25): Adds 5 to priority
+    * Less than or equal to 150 beats and more than 130 beats (130-150, including 150): Adds 4 to priority
+    * Less than or equal to 45 beats and more than 25 beats (25-45, including 45): Adds 3 to priority
+    * Less than or equal to 65 beats and more than 45 beats (45-70, including 70): Adds 2 to priority
+    * Less than or equal to 130 beats and more than 110 beats (110-130, including 130): Adds 1 to priority
+    * Less than or equal to 110 beats and more than 65 beats (65-110, including 110): No change
