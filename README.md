@@ -19,8 +19,7 @@ Sample patient print out:
 Name: John Doe                                                                                                                                                 
 Sex: Male                                                                                           
 Age: 65                                                                                            
-Condition: Stroke                                                                                            
-Blood Pressure: 148/65                                                                                            
+Condition: Stroke                                                                                                                                                                                               
 Heart Rate: 89                                                                                            
 This process is repeated until there is no more patients to treat. The program will print out "You have treated everyone! There is no more patients waiting!"
 
@@ -31,13 +30,19 @@ This function is used to read the data in the file and to put each entry in the 
 ## Calculating the priority of a patient - prioritySetUp(std::string sexes[], std::string ages[], std::string conditions[], std::string bloodPressures[], std::string heartRates[], int numOfPatients, unsigned int priority[])
 This function is used to calculate each of the patients who are listed in the file's priority. The patients with a higher priority will show up first while the program is being ran. The priority of each patient starts as 0 before their information is analyzed. Each condition, heart rate, and blood pressure has a priority value. The priority value of the heart rate is also dependent on the sex and age of the patient.                                                                   
 Medical Concern:                                                                                                                                                                                                                                                                                                  
-Heart Attack or Stroke: Adds 5 to the priority                                                                                                                                                 
-Head Injury or Unknown: Adds 4 to the priority                                                                                                                                                 
-Bleeding: Adds 3 to the priority                                                                                                                                                  
+Heart Attack or Stroke: Adds 5 to the priority                                                                                                      
+Head Injury or Unknown: Adds 4 to the priority                                                                                                     
+Bleeding: Adds 3 to the priority                                                                                                                   
 Broken Bone: Adds 2 to the priority                                                                                                                                                 
-Stomach Pain: Adds 1 to the priority                                                                                                                                                 
+Stomach Pain: Adds 1 to the priority                                                                           
+
 
 Blood Pressure:                                                                                                                                                  
 Systolic pressure is the first number in the blood pressure reading and the diastolic pressure is the second.
 
-![Knight Moves](chess.png)
+![Blood Pressure Chart](body_bpchart.png)                                                                                                                                                 
+Hypertensive Critical: Adds 5 to the priority                                                                                                        
+High Blood Pressure Stage 2: Adds 4 to the priority                                                                                                       
+Low Blood Pressure: Adds 3 to the priority                                                                                                                        
+High Blood Pressure Stage 1: Adds 2 to the priority                                                                                                         
+Prehypertension: Adds 1 to the priority                                                                                                                  
