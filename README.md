@@ -30,19 +30,39 @@ This function is used to read the data in the file and to put each entry in the 
 ## Calculating the priority of a patient - prioritySetUp(std::string sexes[], std::string ages[], std::string conditions[], std::string bloodPressures[], std::string heartRates[], int numOfPatients, unsigned int priority[])
 This function is used to calculate each of the patients who are listed in the file's priority. The patients with a higher priority will show up first while the program is being ran. The priority of each patient starts as 0 before their information is analyzed. Each condition, heart rate, and blood pressure has a priority value. The priority value of the heart rate is also dependent on the sex and age of the patient.                                                                   
 Medical Concern:                                                                                                                                                                                                                                                                                                  
-Heart Attack or Stroke: Adds 5 to the priority                                                                                                      
-Head Injury or Unknown: Adds 4 to the priority                                                                                                     
-Bleeding: Adds 3 to the priority                                                                                                                   
-Broken Bone: Adds 2 to the priority                                                                                                                                                 
-Stomach Pain: Adds 1 to the priority                                                                           
+* Heart Attack or Stroke: Adds 5 to the priority                                                                                                      
+* Head Injury or Unknown: Adds 4 to the priority                                                                                                     
+* Bleeding: Adds 3 to the priority                                                                                                                   
+* Broken Bone: Adds 2 to the priority                                                                                                                                                 
+* Stomach Pain: Adds 1 to the priority                                                                           
 
 
 Blood Pressure:                                                                                                                                                  
 Systolic pressure is the first number in the blood pressure reading and the diastolic pressure is the second.
 
 ![Blood Pressure Chart](body_bpchart.png)                                                                                                                                                 
-Hypertensive Critical: Adds 5 to the priority                                                                                                        
-High Blood Pressure Stage 2: Adds 4 to the priority                                                                                                       
-Low Blood Pressure: Adds 3 to the priority                                                                                                                        
-High Blood Pressure Stage 1: Adds 2 to the priority                                                                                                         
-Prehypertension: Adds 1 to the priority                                                                                                                  
+* Hypertensive Critical: Adds 5 to the priority                                                                                                        
+* High Blood Pressure Stage 2: Adds 4 to the priority                                                                                                       
+* Low Blood Pressure: Adds 3 to the priority                                                                                                                        
+* High Blood Pressure Stage 1: Adds 2 to the priority                                                                                                         
+* Prehypertension: Adds 1 to the priority                                                                                                                  
+
+
+Heart Rate:                                                                                                                                        
+Uses another function to calculate this for organizational purposes - heartRatesRange(int heartRate, int fstLow, int lstLow, int normLow, int normHigh, int fstHigh, int secHigh, int currentPriority)
+![Heart Rate Chart](Unknown.jpg)
+* Child Under 1:                                                                                                                                                  
+** Less than or equal to 30 beats or greater than 150: Adds 5 to priority
+** Less than or equal to 150 beats and more than 130 beats: Adds 4 to priority
+** Less than or equal to 50 beats and more than 30 beats: Adds 3 to priority
+** Less than or equal to 70 beats and more than 50 beats: Adds 2 to priority
+** Less than or equal to 130 beats and more than 110 beats: Adds 1 to priority
+** Less than or equal to 110 beats and more than 70 beats: No change
+
+* Child Under 1:                                                                                                                                                  
+** Less than or equal to 30 beats or greater than 150: Adds 5 to priority
+** Less than or equal to 150 beats and more than 130 beats: Adds 4 to priority
+** Less than or equal to 50 beats and more than 30 beats: Adds 3 to priority
+** Less than or equal to 70 beats and more than 50 beats: Adds 2 to priority
+** Less than or equal to 130 beats and more than 110 beats: Adds 1 to priority
+** Less than or equal to 110 beats and more than 70 beats: No change
