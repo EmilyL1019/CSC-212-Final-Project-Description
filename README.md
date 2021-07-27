@@ -59,10 +59,112 @@ Uses another function to calculate this for organizational purposes - heartRates
     * Less than or equal to 70 beats and more than 50 beats (50-70, including 70): Adds 2 to priority
     * Less than or equal to 130 beats and more than 110 beats (110-130, including 130): Adds 1 to priority
     * Less than or equal to 110 beats and more than 70 beats (70-110, including 110): No change
-  * 6 to 3 Years Old:                                                                                                                                                  
+  * 4 to 6 Years Old:                                                                                                                                                  
     * Less than or equal to 25 beats or greater than 150 (0-25, 150 up, including 25): Adds 5 to priority
     * Less than or equal to 150 beats and more than 130 beats (130-150, including 150): Adds 4 to priority
     * Less than or equal to 45 beats and more than 25 beats (25-45, including 45): Adds 3 to priority
-    * Less than or equal to 65 beats and more than 45 beats (45-70, including 70): Adds 2 to priority
+    * Less than or equal to 65 beats and more than 45 beats (45-65, including 65): Adds 2 to priority
     * Less than or equal to 130 beats and more than 110 beats (110-130, including 130): Adds 1 to priority
     * Less than or equal to 110 beats and more than 65 beats (65-110, including 110): No change
+  * 7 to 12 Years Old:                                                                                                                                                  
+    * Less than or equal to 30 beats or greater than 125 (0-30, 125 up, including 30): Adds 5 to priority
+    * Less than or equal to 125 beats and more than 105 beats (105-125, including 125): Adds 4 to priority
+    * Less than or equal to 50 beats and more than 30 beats (30-50, including 50): Adds 3 to priority
+    * Less than or equal to 60 beats and more than 50 beats (50-60, including 60): Adds 2 to priority
+    * Less than or equal to 105 beats and more than 950 beats (95-105, including 105): Adds 1 to priority
+    * Less than or equal to 95 beats and more than 60 beats (60-95, including 95): No change
+  * 13 to 18 Years Old:                                                                                                                                                  
+    * Less than or equal to 15 beats or greater than 115 (0-15, 115 up, including 15): Adds 5 to priority
+    * Less than or equal to 115 beats and more than 105 beats (105-115, including 115): Adds 4 to priority
+    * Less than or equal to 35 beats and more than 15 beats (15-35, including 35): Adds 3 to priority
+    * Less than or equal to 55 beats and more than 35 beats (35-55, including 55): Adds 2 to priority
+    * Less than or equal to 105 beats and more than 85 beats (85-105, including 105): Adds 1 to priority
+    * Less than or equal to 85 beats and more than 55 beats (55-85, including 85): No change
+* Men
+  * 35 Years and Under:                                                                                                                                                  
+    * Less than or equal to 20 beats or greater than 105 (0-20, 105 up, including 20): Adds 5 to priority
+    * Less than or equal to 105 beats and more than 85 beats (85-105, including 105): Adds 4 to priority
+    * Less than or equal to 30 beats and more than 20 beats (20-30, including 30): Adds 3 to priority
+    * Less than or equal to 50 beats and more than 30 beats (30-50, including 50): Adds 2 to priority
+    * Less than or equal to 85 beats and more than 75 beats (75-85, including 85): Adds 1 to priority
+    * Less than or equal to 75 beats and more than 50 beats (50-75, including 75): No change
+  * 36 to 45 Years Old:                                                         
+    * Less than or equal to 25 beats or greater than 95 (0-25, 95 up, including 25): Adds 5 to priority
+    * Less than or equal to 95 beats and more than 85 beats (85-95, including 95): Adds 4 to priority
+    * Less than or equal to 35 beats and more than 25 beats (25-35, including 35): Adds 3 to priority
+    * Less than or equal to 55 beats and more than 35 beats (35-55, including 55): Adds 2 to priority
+    * Less than or equal to 85 beats and more than 75 beats (75-85, including 85): Adds 1 to priority
+    * Less than or equal to 75 beats and more than 55 beats (55-75, including 75): No change
+  * 46 to 55 Years Old:                                                         
+    * Less than or equal to 30 beats or greater than 105 (0-30, 105 up, including 30): Adds 5 to priority
+    * Less than or equal to 105 beats and more than 85 beats (85-105, including 105): Adds 4 to priority
+    * Less than or equal to 40 beats and more than 30 beats (30-40, including 40): Adds 3 to priority
+    * Less than or equal to 60 beats and more than 40 beats (40-60, including 60): Adds 2 to priority
+    * Less than or equal to 85 beats and more than 75 beats (75-85, including 85): Adds 1 to priority
+    * Less than or equal to 75 beats and more than 60 beats (60-75, including 75): No change
+  * 56 to 65 Years Old:                                                         
+    * Less than or equal to 35 beats or greater than 100 (0-35, 100 up, including 35): Adds 5 to priority
+    * Less than or equal to 100 beats and more than 90 beats (90-100, including 100): Adds 4 to priority
+    * Less than or equal to 45 beats and more than 35 beats (35-45, including 45): Adds 3 to priority
+    * Less than or equal to 65 beats and more than 45 beats (45-65, including 65): Adds 2 to priority
+    * Less than or equal to 90 beats and more than 80 beats (80-90, including 90): Adds 1 to priority
+    * Less than or equal to 80 beats and more than 60 beats (65-80, including 80): No change
+  * Over 65 Years Old:                                                         
+    * Less than or equal to 40 beats or greater than 95 (0-40, 95 up, including 40): Adds 5 to priority
+    * Less than or equal to 95 beats and more than 85 beats (85-95, including 95): Adds 4 to priority
+    * Less than or equal to 50 beats and more than 40 beats (40-50, including 50): Adds 3 to priority
+    * Less than or equal to 70 beats and more than 50 beats (50-70, including 70): Adds 2 to priority
+    * Less than or equal to 85 beats and more than 75 beats (75-85, including 85): Adds 1 to priority
+    * Less than or equal to 75 beats and more than 70 beats (70-75, including 75): No change
+* Women
+  * 35 Years and Under:                                                                                                                                                  
+    * Less than or equal to 35 beats or greater than 105 (0-35, 105 up, including 35): Adds 5 to priority
+    * Less than or equal to 105 beats and more than 90 beats (90-105, including 105): Adds 4 to priority
+    * Less than or equal to 45 beats and more than 35 beats (35-45, including 45): Adds 3 to priority
+    * Less than or equal to 65 beats and more than 45 beats (45-65, including 65): Adds 2 to priority
+    * Less than or equal to 90 beats and more than 80 beats (80-90, including 90): Adds 1 to priority
+    * Less than or equal to 80 beats and more than 65 beats (65-80, including 80): No change
+  * 36 to 45 Years Old:                                                         
+    * Less than or equal to 25 beats or greater than 95 (0-25, 95 up, including 25): Adds 5 to priority
+    * Less than or equal to 95 beats and more than 85 beats (85-95, including 95): Adds 4 to priority
+    * Less than or equal to 35 beats and more than 25 beats (25-35, including 35): Adds 3 to priority
+    * Less than or equal to 55 beats and more than 35 beats (35-55, including 55): Adds 2 to priority
+    * Less than or equal to 85 beats and more than 75 beats (75-85, including 85): Adds 1 to priority
+    * Less than or equal to 75 beats and more than 55 beats (55-75, including 75): No change
+
+
+            else if (stoi(ages[i]) <= 45){
+                currentPriority = heartRatesRange(stoi(heartRates[i]), 35, 45, 65, 75, 85, 105, currentPriority);
+            }
+            else if (stoi(ages[i]) <= 55){
+                currentPriority = heartRatesRange(stoi(heartRates[i]), 30, 40, 60, 75, 80, 90, currentPriority);
+            }
+            else if (stoi(ages[i]) <= 65){
+                currentPriority = heartRatesRange(stoi(heartRates[i]), 40, 50, 70, 80, 90, 100, currentPriority);
+            }
+            else {
+                currentPriority = heartRatesRange(stoi(heartRates[i]), 45, 55, 70, 75, 85, 95, currentPriority);
+            }
+
+  * 46 to 55 Years Old:                                                         
+    * Less than or equal to 30 beats or greater than 105 (0-30, 105 up, including 30): Adds 5 to priority
+    * Less than or equal to 105 beats and more than 85 beats (85-105, including 105): Adds 4 to priority
+    * Less than or equal to 40 beats and more than 30 beats (30-40, including 40): Adds 3 to priority
+    * Less than or equal to 60 beats and more than 40 beats (40-60, including 60): Adds 2 to priority
+    * Less than or equal to 85 beats and more than 75 beats (75-85, including 85): Adds 1 to priority
+    * Less than or equal to 75 beats and more than 60 beats (60-75, including 75): No change
+  * 56 to 65 Years Old:                                                         
+    * Less than or equal to 35 beats or greater than 100 (0-35, 100 up, including 35): Adds 5 to priority
+    * Less than or equal to 100 beats and more than 90 beats (90-100, including 100): Adds 4 to priority
+    * Less than or equal to 45 beats and more than 35 beats (35-45, including 45): Adds 3 to priority
+    * Less than or equal to 65 beats and more than 45 beats (45-65, including 65): Adds 2 to priority
+    * Less than or equal to 90 beats and more than 80 beats (80-90, including 90): Adds 1 to priority
+    * Less than or equal to 80 beats and more than 60 beats (65-80, including 80): No change
+  * Over 65 Years Old:                                                         
+    * Less than or equal to 40 beats or greater than 95 (0-40, 95 up, including 40): Adds 5 to priority
+    * Less than or equal to 95 beats and more than 85 beats (85-95, including 95): Adds 4 to priority
+    * Less than or equal to 50 beats and more than 40 beats (40-50, including 50): Adds 3 to priority
+    * Less than or equal to 70 beats and more than 50 beats (50-70, including 70): Adds 2 to priority
+    * Less than or equal to 85 beats and more than 75 beats (75-85, including 85): Adds 1 to priority
+    * Less than or equal to 75 beats and more than 70 beats (70-75, including 75): No change
+ 
