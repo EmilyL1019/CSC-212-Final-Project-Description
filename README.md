@@ -39,10 +39,10 @@ This process is repeated until there is no more patients to treat. When this hap
 * main.cpp - Connects all necessary files together and runs the program
 
 # Code Implementation
-## Count patients function - int data::countNumOfPatients(std::string fileName)
+## Counting patients - int data::countNumOfPatients(std::string fileName)
 This function counts and returns the number of patients whose data is in the csv file. Since each patient has their data on one seperate line of the file, the function does this by opening the file and increasing a counter, initialized as 0 as the function loops through each line of the file with a while loop. When the function exits the while loop, the counter gets returned representing the number of patients within the file.
 
-## Read CSV file function - void data::readCSV(std::string fileName, int numOfPatients, std::string names[], std::string sexes[], std::string ages[], std::string conditions[], std::string bloodPressures[], std::string heartRates[], std::string DNASequences[])
+## Reading CSV file - void data::readCSV(std::string fileName, int numOfPatients, std::string names[], std::string sexes[], std::string ages[], std::string conditions[], std::string bloodPressures[], std::string heartRates[], std::string DNASequences[])
 This function is used to read the data in the file and to put each entry in the correct array listed in the parameters of the function. This will allow the program to manipulate and anayzle the data easily later on in the program. This function uses the implementation from the csv file data type. It saves every piece of data in a specific array based on what column the data is in. After it is completed, the file is closed to aviod it being accidently modified while the program is running and only the arrays are used in the program. 
 
 ## Calculating the priority of a patient - void data::prioritySetUp(std::string sexes[], std::string ages[], std::string conditions[], std::string bloodPressures[], std::string heartRates[], int numOfPatients, unsigned int priority[])
