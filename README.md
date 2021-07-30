@@ -89,7 +89,7 @@ Uses a private helper function to calculate this for organizational purposes - h
     * Less than or equal to 125 beats and more than 105 beats (105-125, including 125): Adds 4 to priority
     * Less than or equal to 50 beats and more than 30 beats (30-50, including 50): Adds 3 to priority
     * Less than or equal to 60 beats and more than 50 beats (50-60, including 60): Adds 2 to priority
-    * Less than or equal to 105 beats and more than 950 beats (95-105, including 105): Adds 1 to priority
+    * Less than or equal to 105 beats and more than 95 beats (95-105, including 105): Adds 1 to priority
     * Less than or equal to 95 beats and more than 60 beats (60-95, including 95): No change
   * 13 to 18 Years Old:                                                                                                                                                  
     * Less than or equal to 15 beats or greater than 115 (0-15, 115+, including 15): Adds 5 to priority
@@ -145,8 +145,8 @@ Uses a private helper function to calculate this for organizational purposes - h
   * 36 to 45 Years Old:                                                         
     * Less than or equal to 35 beats or greater than 105 (0-35, 105+, including 35): Adds 5 to priority
     * Less than or equal to 105 beats and more than 85 beats (85-105, including 105): Adds 4 to priority
-    * Less than or equal to 45 beats and more than 35 beats (35-45, including 45): Adds 3 to priorityall pati
-    * Less than or equal to 65 beats and more than 45 beats (45-65, including 65): Adds 2 to priority - void P_Queue::insertPatients(std::string names[], unsigned int priority[], int numOfPatients)
+    * Less than or equal to 45 beats and more than 35 beats (35-45, including 45): Adds 3 to priority
+    * Less than or equal to 65 beats and more than 45 beats (45-65, including 65): Adds 2 to priority
     * Less than or equal to 85 beats and more than 75 beats (75-85, including 85): Adds 1 to priority
     * Less than or equal to 75 beats and more than 65 beats (65-75, including 75): No change
   * 46 to 55 Years Old:                                                         
@@ -172,13 +172,13 @@ Uses a private helper function to calculate this for organizational purposes - h
     * Less than or equal to 75 beats and more than 70 beats (70-75, including 75): No change
 
 ## Comparing DNA sequences - void dataMod::DNASequenceAnaylsis(std::string DNASequences[], std::string names[], int numOfPatients)
-This function uses a nested for loop that allows it to compare each DNA sequence to each other. It uses the numOfPatients to transverse through list of the DNASequences and the names to label the columns and rows of the outputted table. It calculates the score that is intialized by 0 of each DNASequence anaylsis using the scoring system described in the "Use" section. It uses std::cout and std::width to format the data so that it is easy to read by the user.
+This function uses a nested for loop that allows it to compare each DNA sequence to each other. It uses the numOfPatients to transverse through the list of DNA sequences and the names to label the columns and rows of the outputted table. It calculates the score (intialized by 0) of each DNASequence anaylsis using the scoring system described in the "Use" section. It uses std::cout and std::width to format the data so that it is easy to read by the user.
 
 ## Insert all patient names into the queue - void P_Queue::insertPatients(std::string names[], unsigned int priority[], int numOfPatients)
 This functions uses a for loop to call its helper function, P_Queue::enqueue(std::string data, unsigned int priority) for every patient. In this function, the name of the patient gets added into the queue and is relocated based on how the unsigned, priority interger compares to the priority intergers of the nodes already in the queue. This will cause the patients with the highest priority to be inserted in the front.
 
 ## Extract data and treat all patients one by one - void P_Queue::treat(std::string names[], std::string sexes[], std::string ages[], std::string conditions[], std::string bloodPressures[], std::string heartRates[], std::string DNASequences[])
-This function is a recursive function that outputs all of the patient whom is at the head of the priority queue's information. It waits for the user to input "Treat" and then removes the patient from the queue using the helper function dequeue which deletes the head and reassigns it to the node that was next in queue. Because this function is recursive, it will call itself with its updated queue until the base case. The base case of this function occurs when the head of the queue is equivalent to nullptr because this means all the patients were removed from queue and there's no more patients to treat. When this occurs, the program will print out, "You have treated everyone! There is no more patients waiting!" and return to the main function. The main function will then end because the program has been completed. 
+This function is a recursive function that outputs all of the patient's, whom is at the head of the priority queue information. It waits for the user to input "Treat" and then removes the patient from the queue using the helper function, dequeue which deletes the head and reassigns it to the node that was next in queue. Because this function is recursive, it will call itself with its updated queue until the base case. The base case of this function occurs when the head of the queue is equivalent to nullptr because this means all the patients were removed from queue and there's no more patients to treat. When this occurs, the program will print out, "You have treated everyone! There is no more patients waiting!" and return to the main function. The main function will then end because the program has been completed. 
 
 # Potiental Bugs
 * The data must be organized in the order described in the "Use" section of this documentation. There must only be commas located between each section therefore, names need to be entered as "(first name) (last name)". Adding additional commas will add more columns into the row which would cause data to go into the incorrect array. This could cause the program to anayzle data in an incorrect way which skews the output or in an impossible way leading to a segfault error.
