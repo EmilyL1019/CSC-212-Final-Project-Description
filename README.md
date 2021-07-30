@@ -26,7 +26,7 @@ Sex: Male
 Age: 65                                                                                            
 Condition: Stroke                                                                                                                                                                                               
 Heart Rate: 89                                                                                            
-This process is repeated until there is no more patients to treat. The program will print out "You have treated everyone! There is no more patients waiting!"
+This process is repeated until there is no more patients to treat. When this happens, the program will print out "You have treated everyone! There is no more patients waiting!" and end.
 
 # File Descriptions
 * Data.h - Collects and manipulates all data from the CSV file so that it can be used to give the user the accurant output
